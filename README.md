@@ -21,7 +21,7 @@ Add the following to your `.env` file:
 PRZELEWY24_MERCHANT_ID=12345
 PRZELEWY24_REPORTS_KEY=f0ae...
 PRZELEWY24_CRC=aef0...
-PRZELEWY24_LIVE=false
+PRZELEWY24_IS_LIVE=false
 ```
 
 Setting `PRZELEWY24_LIVE` to `false` will use the [sandbox environment](https://sandbox.przelewy24.pl/panel/). Set it to `true` to use production/live mode.
@@ -111,7 +111,7 @@ class MyController
             originAmount: $order->amount,
             orderId: $webhook->orderId(),
             methodId: $webhook->methodId(),
-            statement: "Order #{$order->id}",
+            statement: $webhook->statement(),
             // currency: Currency::EUR,
         );
 
