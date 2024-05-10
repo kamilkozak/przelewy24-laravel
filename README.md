@@ -24,7 +24,7 @@ PRZELEWY24_CRC=aef0...
 PRZELEWY24_IS_LIVE=false
 ```
 
-Setting `PRZELEWY24_LIVE` to `false` will use the [sandbox environment](https://sandbox.przelewy24.pl/panel/). Set it to `true` to use production/live mode.
+Setting `PRZELEWY24_IS_LIVE` to `false` will use the [sandbox environment](https://sandbox.przelewy24.pl/panel/). Set it to `true` to use production/live mode.
 
 Pos ID may also be set if necessary:
 
